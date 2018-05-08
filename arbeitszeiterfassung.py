@@ -4,6 +4,7 @@ import os, sys, getopt
 dir_path = os.path.dirname(os.path.realpath(__file__))
 runtime = Runtime(dir_path)
 
+
 def main(argv):
     try:
         opts, args = getopt.getopt(argv,"i",["init",])
@@ -21,4 +22,4 @@ def main(argv):
 
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
+    main(sys.argv[1:])
